@@ -1,4 +1,12 @@
+import 작명 from './data.js'
+import {label, author} from './datasecond.js'
+
 export default function Cart() {
+
+    console.log(작명)
+    console.log(label)
+    console.log(author)
+
     return (
       <div>
         <h4 className="title">Cart</h4>
