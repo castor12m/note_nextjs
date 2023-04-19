@@ -27,7 +27,7 @@ export default function List() {
           상품.map((a, i)=>{           
             return (
               <div className="food" key={i}>
-                <Image src={작명} className=".food-img"/>
+                <Image src={작명} className="food-img"/>
                 <h4>{a} $40</h4>
               </div>
             )    
