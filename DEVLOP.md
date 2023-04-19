@@ -190,7 +190,43 @@ export default function List() {..}
 
   위를 통한 최적화된 이미지 삽입
 
-###
+### 9 컴포넌트
+
+컴포넌트란. html 덩어리를 function화 해서 사용하는 것?!
+
+```js
+export default function Cart() {
+    return (
+      ...
+        <CartItem/>
+    ...
+    )
+  }
+
+
+function CartItem(){
+  return(
+    <div className="cart-item">
+      <p>상품명</p>
+      <p>$40</p>
+      <p>1개</p>
+    </div>
+  )
+}
+```
+
+위와 같이 바로 작성 하면 server component 이며
+상단에 'use client' 라고 적으면 client component 이다.
+
+
+server component 와 client component 차이?
+
+server component는 html에 자바스크립트 넣기 불가능
+```js
+    <p onClick={()=>{}} >상품명</p>   // 이런거 불가능
+```
+그리고 useState, useEffect 등 사용 불가라고함..
+  
 
 ###
 
