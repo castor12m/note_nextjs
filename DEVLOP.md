@@ -123,9 +123,30 @@ jsx 에 자바스크립트 변수를 사용하고자 할 때는 다음과 같이
 따라서 font-size인 경우 fontSize로 해주는 식으로 입력
 케밥케이스를 케멀케이스로 한다고 생각하면 됨
 
-###
+### 5. Routing
 
-###
+/list 로 적송하면 상품목록.html 보여주기
+Next.js는 파일,폴더 하나 만들면 라우팅 가능
+
+fresh/app/list              # 폴더 생성
+fresh/app/list/page.js      # 파일 생성
+
+test 하려면 fresh/app/page.js 에 작성한 내용을
+fresh/app/list/page.js 에 카피 한뒤에
+http://localhost:3000/list 접속해서 확인
+
+### 6.
+
+fresh/app/list/page.js 에서 export default function Home() {..}
+Home 대신 list와 비슷한 List로 변경
+
+function List() {..}
+
+위와 같이 라우팅과 유사하게 하는 경우가 많음
+
+export default 도 잘붙여주기 (컴포넌트를 만들어서 하는 작업이라고 함? 머시기..?)
+
+export default function List() {..}
 
 ###
 
