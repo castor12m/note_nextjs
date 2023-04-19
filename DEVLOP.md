@@ -1,5 +1,9 @@
+
+# 1. 기본 설명들
+
 쉽게 설명하기 위해 생성한 프로젝트 명을 "fresh" 라고 가정하고 path 설명 할 것.
 
+```
 fresh/app/page.js               # 이게 메인 페이지  (react 문법써야함..)
           layout.js             # page.js 를 감싸는 레이아웃
 
@@ -15,4 +19,62 @@ fresh/public                    # 이미지 등 소스코드 외의 파일들 �
 fresh/package.json              # 터미널에서 쓸수 있는 명령어
                                 # 설치한 라이브러리 자동으로 기록
 
-$ npm run dev       # 실행
+$ npm run dev           # 실행
+
+```
+
+# 2. 기초 문법
+
+next.js 는 react 위에서 작동한다고함.
+그래서 react 문법을 사용해야함
+
+react 버전의 html 문법을 'JSX' 라고함.
+
+큰 특징 4개가 있음.
+
+
+### 2.1 return() 안에 HTML을 넣을 때
+
+아래와 같이 평행한 태그 존재 하면 안됨.
+
+return (
+    <div>
+      <h4>test</h4>
+    </div>
+    <div></div>
+  )
+
+하고 싶으면 다음과 같이 감싸줘야함
+
+return (
+    <div>
+      <h4>test</h4>
+        <div></div>
+        <div></div>
+    </div>
+  )
+
+### 2.2 class 넣고 싶으면 className
+
+스타일을 적용하고 싶으면 보통 css 클래스를 만들고
+html 에 해당 클래스를 적어서 반영함
+그때 다음과 같이 class 가 아니라
+
+return (
+    <div>
+      <h4 class="testclass">test</h4>
+    </div>
+  )
+
+className 이라고 적어줘야함
+왜냐하면 javascript 문법에서의 class와 겹치지 않기 위해서라고함.
+
+return (
+    <div>
+      <h4 className="testclass">test</h4>
+    </div>
+  )
+
+### 2.3 class 넣고 싶으면 className
+
+### 2.4 class 넣고 싶으면 className
