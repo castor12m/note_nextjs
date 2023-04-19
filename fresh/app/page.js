@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Home() {
 
   let name = 'park'
@@ -6,6 +8,10 @@ export default function Home() {
 
   return (
     <div>
+      <div className="navbar">
+        <Link href="/">Home</Link>
+        <Link href="/list">List</Link>
+      </div>
       <h4 className="title">test</h4>
       <p className="title-sub">name : {name}</p>
       <p className="title-sub">age : {age}</p>
