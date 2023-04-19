@@ -1,3 +1,6 @@
+import Image from "next/image"
+import 작명 from '/public/food/test0.png'
+
 export default function List() {
 
     let name = 'park'
@@ -11,20 +14,25 @@ export default function List() {
     console.log('test-------------' + {상품})
     console.log({상품})
 
+    let b = 상품.map((a)=>{
+      
+    })
+
+    console.log(b)
+
     return (
       <div>
         <h4 className="title">List</h4>
-       
-        <div className="food">
-          <h4>{상품[0]} $40</h4>
-        </div>
-        <div className="food">
-          <h4>{상품[1]} $40</h4>
-        </div>
-        <div className="food">
-          <h4>{상품[2]} $40</h4>
-        </div>
-
+        {
+          상품.map((a, i)=>{           
+            return (
+              <div className="food" key={i}>
+                <Image src={작명} className=".food-img"/>
+                <h4>{a} $40</h4>
+              </div>
+            )    
+          })
+        }
       </div>
     )
   }
