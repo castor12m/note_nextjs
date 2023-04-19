@@ -101,7 +101,27 @@ jsx 에 자바스크립트 변수를 사용하고자 할 때는 다음과 같이
 ```
 
 
-###
+### 4
+
+다음과 같이 style을 바로 부여하고자 할 때, style 속성에 바로 스타일문법을 쓰면
+동작 안함.
+
+```js
+    <p style="color : red">age : {age}</p>
+```
+
+다음과 같이 작성해야함...
+
+```js
+    <p style={{color: 'red'}}>age : {age}</p>
+     or
+    <p style={{color: 'red', fontSize:'30px'}}>age : {age}</p>
+```
+
+보통 css 에서 font-size 하나봄?
+하지만 jsx에서는 object자료형이라 dash 불가
+따라서 font-size인 경우 fontSize로 해주는 식으로 입력
+케밥케이스를 케멀케이스로 한다고 생각하면 됨
 
 ###
 
