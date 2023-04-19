@@ -75,6 +75,40 @@ return (
     </div>
   )
 
-### 2.3 class 넣고 싶으면 className
+### 3
 
-### 2.4 class 넣고 싶으면 className
+아래의 "let name = 'park'" 이라고 써진 공간에 자바스크립트 작성.
+
+```js
+    export default function Home() {
+
+        let name = 'park'
+
+        return (
+            ...
+                <h4 className="name-style">name : {name}</h4>
+            ...
+        )
+    }
+```
+
+jsx 에 자바스크립트 변수를 사용하고자 할 때는 다음과 같이 중괄호 안에 자바스크립트 변수 넣으면 됨.
+
+이를 jsx에 데이터바인딩 했다고 함.
+
+```js
+    <h4 className="name-style">name : {name}</h4>
+```
+
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
