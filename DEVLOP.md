@@ -227,6 +227,17 @@ server component는 html에 자바스크립트 넣기 불가능
 ```
 그리고 useState, useEffect 등 사용 불가라고함..
   
+하지만 server component는 로딩이 빠르고 검색 노출에 유리
+
+client component는 로딩속도가 느림 
+이유1. 자바스크립트가 많이 필요
+이유2. hydration 이 필요하기 때문
+
+그래서
+큰페이지는 server component
+기능들 필요한것은 client component
+로 만듬.
+
 
 ###
 
